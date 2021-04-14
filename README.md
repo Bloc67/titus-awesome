@@ -26,8 +26,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager qt5-styleplugins -y
-wget -qO- https://git.io/papirus-icon-theme-install | sh
+yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager qt5-styleplugins papirus-icon-theme -y
 ```
 
 #### Program list
@@ -62,7 +61,7 @@ git clone --branch debian https://github.com/ChrisTitusTech/titus-awesome ~/.con
 
 ### 3) Set the themes
 
-Start `lxappearance` to active the **icon** theme and **GTK** theme
+Start `lxappearance` to activate the **icon** theme and **GTK** theme.
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
 Recommended Cursors - <https://github.com/keeferrourke/capitaine-cursors>
