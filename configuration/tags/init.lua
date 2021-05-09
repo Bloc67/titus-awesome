@@ -23,24 +23,6 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = apps.default.game,
-    screen = 1
-  },
-  {
-    icon = icons.folder,
-    type = 'files',
-    defaultApp = apps.default.files,
-    screen = 1
-  },
-  {
-    icon = icons.music,
-    type = 'music',
-    defaultApp = apps.default.music,
-    screen = 1
-  },
-  {
     icon = icons.lab,
     type = 'any',
     defaultApp = apps.default.rofi,
@@ -50,8 +32,7 @@ local tags = {
 
 awful.layout.layouts = {
   awful.layout.suit.tile,
-  awful.layout.suit.max,
-  awful.layout.suit.floating
+  awful.layout.suit.max
 }
 
 awful.screen.connect_for_each_screen(
@@ -64,7 +45,7 @@ awful.screen.connect_for_each_screen(
           icon_only = true,
           layout = awful.layout.suit.tile,
           gap_single_client = false,
-          gap = 4,
+          gap = 0,
           screen = s,
           defaultApp = tag.defaultApp,
           selected = i == 1

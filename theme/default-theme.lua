@@ -40,7 +40,7 @@ local awesome_overrides =
 
   -- Borders
 
-  theme.border_width = dpi(2)
+  theme.border_width = dpi(1)
   theme.border_normal = theme.background.hue_800
   theme.border_focus = theme.primary.hue_300
   theme.border_marked = '#CC9393'
@@ -55,7 +55,7 @@ local awesome_overrides =
   --theme.tooltip_border_color = '#232323'
   theme.tooltip_border_width = 0
   theme.tooltip_shape = function(cr, w, h)
-    gears.shape.rounded_rect(cr, w, h, dpi(6))
+    gears.shape.rounded_rect(cr, w, h, dpi(0))
   end
 
   -- Layout
@@ -98,7 +98,7 @@ local awesome_overrides =
   theme.icon_theme = 'Papirus-Dark'
 
   --Client
-  theme.border_width = dpi(2)
+  theme.border_width = dpi(1)
   theme.border_focus = theme.primary.hue_500
   theme.border_normal = theme.background.hue_800
 end
